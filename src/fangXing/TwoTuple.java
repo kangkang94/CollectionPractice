@@ -19,7 +19,7 @@ public class TwoTuple <A,B>{
         this.b=b;
     }
 
-    
+
     @Override
     public String toString() {
         return "("+a+","+b+")";
