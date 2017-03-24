@@ -61,6 +61,7 @@ public class ListFeatures {
         print("13: "+copy);
         copy.removeAll(sub);
 
+        print("14:"+copy);
         //list转换为数组
         Object[] o = pets.toArray();
         print("14: "+o[3]);
