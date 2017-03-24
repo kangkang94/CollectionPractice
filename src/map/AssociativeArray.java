@@ -29,7 +29,7 @@ public class AssociativeArray<K,V> {
 
     public V get(K k){
         for (int i=0;i<pairs.length;i++){
-            if (k.equals(pairs[i][1])){
+            if (k.equals(pairs[i][0])){
                 return (V) pairs[i][1];
             }
         }

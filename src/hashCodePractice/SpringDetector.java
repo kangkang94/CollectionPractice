@@ -11,11 +11,11 @@ import java.util.Map;
 public class SpringDetector {
 
 
-    public static <T extends Groundhog> void  detectSpring(Class<T> type) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+    public static <T extends Groundhog2> void  detectSpring(Class<T> type) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
 
         Constructor<T> ghog = type.getConstructor(int.class);
 
-        Map<Groundhog,Prediction> map = new HashMap<>();
+        Map<Groundhog2,Prediction> map = new HashMap<>();
 
         for (int i=0;i<10;i++){
             map.put(ghog.newInstance(i),new Prediction());
@@ -35,6 +35,6 @@ public class SpringDetector {
     }
 
     public static void main(String[] args) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
-            detectSpring(Groundhog.class);
+            detectSpring(Groundhog2.class);
     }
 }
