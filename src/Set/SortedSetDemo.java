@@ -28,7 +28,6 @@ public class SortedSetDemo {
             if (i==3){
                low=iterator.next();
             }else if (i ==5){
-
                 high = iterator.next();
             }else {
                 iterator.next();

@@ -6,7 +6,7 @@ package Strings;
 public class MethodOfString {
 
 
-    public static String string = "We must work hard and thinking so that we can get what we want!";
+    public static String string = "   We must work hard and thinking so that we can get what we want!";
 
 
 
